@@ -1,0 +1,66 @@
+@import "mmxins.less";
+
+.animCount__area {
+	position: relative;
+
+	width: 100%;
+	border-bottom: 3px solid #fcbc04;
+	padding: 40px 0;
+	background: #470700;
+
+	.at-max(480px, {
+		padding: 20px 0 10px;
+	});
+}
+
+.animCount__outer {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.animCount__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.animCount {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	justify-content: center;
+
+	.at-max(480px, {
+		width: 50%;
+		margin-bottom: 10px;
+	});
+}
+
+.animCount__number {
+	display: flex;
+	align-items: center;
+}
+
+.animCount__number span {
+	font-size: 3.125rem;
+	color: #fcbc04;
+	line-height: 1.2;
+
+	.at-max(768px, {
+		font-size: 2rem;
+	});
+}
+
+.animCount__numberInfo {
+	font-size: 1.125rem;
+	color: #fff;
+	line-height: 1.4;
+	text-align: center;
+
+	.at-max(768px, {
+		font-size: 1rem;
+	});
+}
