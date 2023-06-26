@@ -1,0 +1,155 @@
+@import "mmxins.less";
+
+.topLine__area {
+  background: rgba(var(--gr_rgb), .8);
+}
+
+.topLine {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.topLine__item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.topLine__item:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.topLine__item i {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 10px;
+  color: var(--or);
+}
+
+.topLine__item span {
+  font-size: 18px;
+  color: #fff;
+}
+
+.topLine__item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.topLine__item a:hover {
+  text-decoration: underline;
+}
+
+
+
+.header__area {
+  // background-color: var(--gr);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo1 {
+  width: 160px;
+}
+
+.logo1 a {
+  text-decoration: none;
+}
+
+.logo1 img {
+  display: block;
+  width: 100%;
+
+}
+
+
+
+/*********************/
+
+.topMenu__area {
+  border-bottom: 4px solid var(--or);
+}
+
+.topMenu {
+  display: flex;
+}
+
+.topMenu li {
+  list-style: none;
+  margin-right: 20px;
+  position: relative;
+}
+
+.topMenu li:last-child {
+  margin-right: 0;
+}
+
+.topMenu li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--gr);
+  text-transform: uppercase;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.topMenu>li:last-child a {
+  padding: 10px 0 10px 10px;
+}
+
+.topMenu li a:hover,
+.topMenu li a.active {
+  color: var(--or);
+}
+
+.topMenu ul {
+  position: absolute;
+  left: -20px;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  // display: none;
+  background: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .08);
+  padding: 20px;
+  z-index: 10;
+}
+
+.topMenu li:hover ul {
+  display: flex;
+}
+
+.topMenu ul li {
+  width: 100%;
+  border-bottom: 1px dashed #e0e0e0;
+  padding: 10px 0;
+
+}
+
+.topMenu ul li a {
+  color: #000;
+  line-height: 1;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: none;
+  padding: 0;
+  text-align: left;
+  font-size: 16px;
+}
+
+.topMenu ul li a:hover,
+.topMenu ul li.active a {
+  color: var(--or);
+}

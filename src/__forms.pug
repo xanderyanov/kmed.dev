@@ -1,0 +1,24 @@
+mixin form1 
+  .cont.form1__area 
+    .wcont
+      .form1__wrapper
+        form.xForm(action='#')
+          .title1 
+            h3 Связаться с нами
+          .xInputWrapper
+            label(for="name_m3") Ваше имя
+            input.name_m3(name='name_m3', type='text', placeholder='Ваше имя')
+          .xInputWrapper
+            label(for="phone_m3") Ваш телефон
+            input.phone_m3(name='phone_m3', type='text', placeholder='+7 (987) 654-32-10')
+          //- input.email_m3(name='email_m3', type='text', placeholder='Email')
+          input.work_email(name='work_email_m3', type='text', placeholder='Рабочий email')
+          .xInputWrapper
+            label(for="phone_m3") Ваше сообщение
+            textarea.message_m3(name='message_m3', cols='30', rows='5', placeholder='Ваше сообщение')
+          .xFormCheck
+            input(name='check_m3', type='checkbox' required='')
+            label(for="check_m3") Согласен на обработку персональных данных
+          button.submit_m3(type='submit', name='submit_m3')
+            span Отправить сообщение 
+

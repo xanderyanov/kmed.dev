@@ -37,11 +37,14 @@ mixin head
     meta(property='og:title' content=pageTitle)
     meta(property='og:description' content=seoDesc)
     meta(property='og:image' content='assets/img/og-img.jpg')
+
+    link(rel='stylesheet' href='assets/css/vendors.css').
     link(rel='stylesheet' href='assets/css/apps.css').
 
 
 mixin scripts
+  script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU')
   script(src='assets/js/vendors.js')
-  script(src='assets/js/main.js')
+  script(src='assets/js/app.js')
 
 

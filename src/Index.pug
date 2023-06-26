@@ -1,8 +1,13 @@
-- var pageTitle = 'Editors'
+- var pageTitle = 'Кэрос-медицина'
 - var seoKeywords = 'Ключевые слова для страницы'
 - var seoDesc = 'Сео описание для страницы'
 
 include __const
+include __header
+include __sliders
+include __about
+include __forms
+include __footer
 
 
 
@@ -12,8 +17,20 @@ include __const
 html(lang="ru-RU")
   +head
 body
+  .site__header
+    +header
 
+  .site__center
+    +mainSlider
+    +about
+    +animCount
+    +adv
+    +form1
+    +myMap
 
+  .site__footer
+    +footer
+    
 
   +scripts
   

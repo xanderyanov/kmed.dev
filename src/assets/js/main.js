@@ -21,32 +21,6 @@ function initVars() {
 $(function () {
   initVars();
 
-  if ($('.functionHeight').length) {
-    var windowH = $(window).height();
-    console.log('windowH ' + windowH);
-
-    var headerH = $('.site__header').outerHeight();
-    console.log('headerH ' + headerH);
-
-    var centerH = $('.site__center').outerHeight();
-    console.log('centerH ' + centerH);
-
-    var footerH = $('.site__footer').outerHeight();
-    console.log('footerH ' + footerH);
-
-    var siteH = headerH + centerH + footerH;
-    console.log('siteH ' + siteH);
-
-    if (siteH < windowH) {
-      var difH = windowH - siteH;
-      var newCenterH = centerH + difH;
-      $('.page__area').css('height', newCenterH);
-      console.log(newCenterH);
-    }
-  }
-
-  barnFirstScreen();
-
   $('a[data-fancybox]').fancybox({
     closeBtn: false,
     backFocus: false,
@@ -90,6 +64,22 @@ $(function () {
     on: {
       activeIndexChange: function () {
         console.log('activeIndexChange');
+
+        $('.swiper-slide')
+          .children('.swiper__cadr')
+          .removeClass('animationBaretsky1')
+          .fadeOut(500);
+
+        setTimeout(function () {
+          $('.swiper-slide-active')
+            .children('.swiper__cadr')
+            .fadeIn(500)
+            .addClass('animated')
+            .addClass('animationBaretsky1');
+        }, 500);
+      },
+      init: function () {
+        console.log('init');
 
         $('.swiper-slide')
           .children('.swiper__cadr')
@@ -690,12 +680,12 @@ var isMobile = {
 };
 
 if ($('.map__area').length) {
-  ymaps.ready(init1);
+  ymaps.ready(initMaps);
 
-  function init1() {
+  function initMaps() {
     var myMap = new ymaps.Map('map', {
-      center: [51.53278464377675, 46.00511899140164],
-      zoom: 17,
+      center: [51.53636907237114, 46.022191999999926],
+      zoom: 14,
       controls: ['zoomControl'],
     });
 
@@ -707,100 +697,33 @@ if ($('.map__area').length) {
     var myGeoObjects = [];
 
     myGeoObjects[0] = new ymaps.Placemark(
-      [51.53278464377675, 46.00511899140164],
+      [51.53636907237114, 46.022191999999926],
       {
-        // Зададим содержимое заголовка балуна.
         balloonContentHeader:
-          '<div class="baloon__top">Каркас 64</div>' +
-          '<div class="baloon__description">каркасное строительство</div>',
-        // Зададим содержимое основной части балуна.
+          '<div class="baloon__top">Кэрос-медицина</div>' +
+          '<div class="baloon__description">IT-Компания</div>',
         balloonContentBody:
-          '<div class="baloon__content"><img src="assets/img/logo1c.png" height="83" width="150">' +
-          '<a href="tel:778801">77-88-01</a>',
-        // Зададим содержимое нижней части балуна.
+          '<div class="baloon__content"><img src="assets/img/meddix_logo_or_gr.svg">' +
+          '<a href="tel:88452650500">8 (8452) 650-500</a>',
         balloonContentFooter:
-          '<div class="baloon__footer">Саратов, улица Слонова, 1</div>',
-        clusterCaption: 'Каркас64',
-        // Зададим содержимое всплывающей подсказки.
-        hintContent: '<div class="baloon__top">Мы в Саратове</div>',
+          '<div class="baloon__footer">Саратов, ул. Московская, 113/117, <br>ТК «Мир», 2 этаж.</div>',
+        clusterCaption:
+          'Косметология<br>салон массажа<br>HAIR услуги<br>NAIL-BAR<br>профессиональная косметика',
+        hintContent:
+          '<div class="baloon__top">It-Компания "Кэрос-медицина"</div>',
       },
       {
         iconLayout: 'default#image',
-        iconImageHref: 'assets/img/marker.svg',
-        iconImageSize: [31, 50],
-        iconImageOffset: [-15, -50],
+        iconImageHref: 'assets/img/marker2.png',
+        iconImageSize: [64, 64],
+        iconImageOffset: [-32, -32],
       }
     );
+
     var clusterIcons = [
       {
         href: '/images/pointer.png',
-        size: [31, 40],
-        offset: [0, 0],
-      },
-    ];
-
-    var clusterer = new ymaps.Clusterer({
-      clusterDisableClickZoom: false,
-      clusterOpenBalloonOnClick: false,
-      clusterBalloonContentLayout: 'cluster#balloonCarousel',
-      clusterBalloonPanelMaxMapArea: 0,
-      clusterBalloonContentLayoutWidth: 300,
-      clusterBalloonContentLayoutHeight: 200,
-      clusterBalloonPagerSize: 5,
-      clusterBalloonPagerType: 'marker',
-    });
-
-    clusterer.add(myGeoObjects);
-    myMap.geoObjects.add(clusterer);
-  }
-}
-
-if ($('.map__area').length) {
-  ymaps.ready(init2);
-
-  function init2() {
-    var myMap = new ymaps.Map('map2', {
-      center: [51.467929973539924, 46.101787816399735],
-      zoom: 16,
-      controls: ['zoomControl'],
-    });
-
-    myMap.behaviors.disable('scrollZoom');
-    if (isMobile.any()) {
-      myMap.behaviors.disable('drag');
-    }
-
-    var myGeoObjects = [];
-
-    myGeoObjects[0] = new ymaps.Placemark(
-      [51.467929973539924, 46.101787816399735],
-      {
-        // Зададим содержимое заголовка балуна.
-        balloonContentHeader:
-          '<div class="baloon__top">Каркас 64</div>' +
-          '<div class="baloon__description">каркасное строительство</div>',
-        // Зададим содержимое основной части балуна.
-        balloonContentBody:
-          '<div class="baloon__content"><img src="assets/img/logo1c.png" height="83" width="150">' +
-          '<a href="tel:778801">77-88-01</a>',
-        // Зададим содержимое нижней части балуна.
-        balloonContentFooter:
-          '<div class="baloon__footer">Энгельс, улица Мельничная, <br>ГСК Волжский. Строение 222</div>',
-        clusterCaption: 'Каркас64',
-        // Зададим содержимое всплывающей подсказки.
-        hintContent: '<div class="baloon__top">Мы в Энгельсе</div>',
-      },
-      {
-        iconLayout: 'default#image',
-        iconImageHref: 'assets/img/marker.svg',
-        iconImageSize: [31, 50],
-        iconImageOffset: [-15, -50],
-      }
-    );
-    var clusterIcons = [
-      {
-        href: '/images/pointer.png',
-        size: [31, 40],
+        size: [29, 46],
         offset: [0, 0],
       },
     ];
