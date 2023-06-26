@@ -706,7 +706,7 @@ if ($('.map__area').length) {
           '<div class="baloon__content"><img src="assets/img/meddix_logo_or_gr.svg">' +
           '<a href="tel:88452650500">8 (8452) 650-500</a>',
         balloonContentFooter:
-          '<div class="baloon__footer">Саратов, ул. Московская, 113/117, <br>ТК «Мир», 2 этаж.</div>',
+          '<div class="baloon__footer">Саратов, ул. Московская, 113/117, <br>ТК «Мир», 5 этаж.</div>',
         clusterCaption:
           'Косметология<br>салон массажа<br>HAIR услуги<br>NAIL-BAR<br>профессиональная косметика',
         hintContent:
@@ -714,7 +714,7 @@ if ($('.map__area').length) {
       },
       {
         iconLayout: 'default#image',
-        iconImageHref: 'assets/img/marker2.png',
+        iconImageHref: 'assets/img/marker3.png',
         iconImageSize: [64, 64],
         iconImageOffset: [-32, -32],
       }

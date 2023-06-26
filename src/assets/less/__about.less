@@ -2,6 +2,16 @@
   margin-top: 40px;
 }
 
+.aboutImg {
+  width: 20%;
+  float: right;
+  margin: 0 0 0 20px;
+
+  .at-max(600px, {
+    width: 40%;
+  });
+}
+
 .animCount__area {
   position: relative;
 
@@ -30,6 +40,9 @@
   width: 25%;
   justify-content: center;
 
+  .at-max(768px, {
+    width: 50%;
+  });
 
 }
 
@@ -39,17 +52,26 @@
 }
 
 .animCount__number span {
-  font-size: 3.125rem;
-  color: #fff;
+  font-size: 50px;
+  // color: #fff;
+  color: var(--or);
   line-height: 1.2;
+
+  .at-max(600px, {
+    font-size: 32px;
+  });
 
 }
 
 .animCount__numberInfo {
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #fff;
   line-height: 1.4;
   text-align: center;
+
+  .at-max(600px, {
+    font-size: 16px;
+  });
 }
 
 /*************************************/
@@ -75,16 +97,32 @@
   flex-direction: column;
   align-items: center;
   padding: 0 0 50px;
+
+  .at-max(768px, {
+    padding: 0 10px 30px;
+  });
+
+.at-max(600px, {
+  width: 50%;
+});
 }
 
 .adv__item i {
   color: var(--or);
   font-size: 72px;
   margin-bottom: 20px;
+
+  .at-max(768px, {
+    font-size: 50px;
+  });
 }
 
 .adv__item span {
   color: var(--gr);
   font-size: 24px;
   text-align: center;
+
+  .at-max(768px, {
+    font-size: 18px;
+  });
 }

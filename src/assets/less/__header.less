@@ -1,7 +1,7 @@
 @import "mmxins.less";
 
 .topLine__area {
-  background: rgba(var(--gr_rgb), .8);
+  background: rgba(var(--gr_rgb), 1);
 }
 
 .topLine {
@@ -9,17 +9,31 @@
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  .at-max(768px, {
+    flex-direction: column
+  });
 }
 
 .topLine__item {
   display: flex;
   align-items: center;
   margin-right: 30px;
+
+  .at-max(768px, {
+    margin-right: 0;
+    margin-bottom: 10px;
+  });
 }
 
 .topLine__item:last-child {
   margin-right: 0;
   margin-left: auto;
+  margin-bottom: 0;
+
+  .at-max(768px, {
+    margin-left: 0;
+  });
 }
 
 .topLine__item i {
@@ -32,11 +46,20 @@
 .topLine__item span {
   font-size: 18px;
   color: #fff;
+
+  .at-max(800px, {
+    font-size: 16px;
+  });
 }
 
 .topLine__item a {
+  font-size: 18px;
   text-decoration: none;
   color: #fff;
+
+  .at-max(800px, {
+    font-size: 16px;
+  });
 }
 
 .topLine__item a:hover {
@@ -55,10 +78,18 @@
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  .at-max(600px, {
+    flex-direction: column
+  });
 }
 
 .logo1 {
   width: 160px;
+
+  .at-max(600px, {
+    margin-bottom: 20px;
+  });
 }
 
 .logo1 a {
@@ -69,6 +100,28 @@
   display: block;
   width: 100%;
 
+}
+
+/****************************/
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .at-max(600px, {
+    align-items: center;
+  });
+}
+
+.slogan span {
+  color: var(--gr);
+  font-size: 28px;
+  font-weight: 600;
+
+  .at-max(768px, {
+    font-size: 22px;
+  });
 }
 
 
