@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="90.987633"
+   height="106.15919"
+   viewBox="0 0 24.07381 28.087955"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="meddix-icon.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.1028927"
+     inkscape:cx="38.499571"
+     inkscape:cy="48.332179"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-center="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="px"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-90.810039,-12.62241)">
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.54999924px;line-height:1.25;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#ef7243;fill-opacity:1;stroke-width:3.52029991"
+       d="m 90.810039,15.372654 q 0,-1.210107 0.770068,-1.980176 0.770069,-0.770068 2.053516,-0.770068 1.283447,0 2.053515,0.770068 0.770068,0.770069 0.770068,1.980176 0,1.191772 -0.770068,1.980175 -0.751733,0.788404 -2.053515,0.788404 -1.301782,0 -2.071851,-0.788404 -0.751733,-0.788403 -0.751733,-1.980175 z"
+       id="path35"
+       inkscape:connector-curvature="0" />
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.54999924px;line-height:1.25;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#ef7243;fill-opacity:1;stroke-width:3.52029991"
+       d="M 96.255522,40.708221 H 91.048394 V 20.869795 h 5.207128 z"
+       id="path22"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 106.90814,26.75746 2.3102,-5.885522 h 5.50049 l -4.52873,9.699194 4.69375,10.139232 h -5.51883 l -2.43854,-6.215551 -2.42022,6.215551 h -5.537157 l 4.693747,-10.139232 -4.492062,-9.699194 h 5.518822 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.54999924px;line-height:1.25;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#326e99;fill-opacity:1;stroke-width:3.52029991"
+       id="path24"
+       inkscape:connector-curvature="0" />
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:37.54999924px;line-height:1.25;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;letter-spacing:0px;word-spacing:0px;fill:#ef7243;fill-opacity:1;stroke-width:3.11648011"
+       d="m 114.71883,12.759923 v 5.207128 H 99.170786 v -5.207128 z"
+       id="path37"
+       inkscape:transform-center-x="-11.79036"
+       inkscape:transform-center-y="-0.018335"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
