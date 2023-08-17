@@ -26,14 +26,30 @@
   });
 }
 
+
+
 .topLine__item:last-child {
   margin-right: 0;
-  margin-left: auto;
   margin-bottom: 0;
+}
 
-  .at-max(768px, {
-    margin-left: 0;
+.topLine__itemGroup {
+  margin-left: auto;
+  display: flex;
+
+  .at-max(1080px, {
+    flex-direction: column;
+
+    .topLine__item {
+      margin-right: 0;
+
+    }
+
   });
+
+.at-max(768px, {
+  margin-left: 0;
+});
 }
 
 .topLine__item i {
