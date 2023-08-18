@@ -6,8 +6,10 @@ mixin footer
   .cont.footer__area 
     footer.footer.wcont 
       .logo1 
-        a(href="#")
-          img(src="assets/img/meddix_logo1_white.svg", alt="") 
+        //- a(href="#")
+          //- img(src="assets/img/meddix_logo_or_bl.svg", alt="") 
+        span(style="color: #fff;") Кэрос
+        span.or MED
       .footer__info 
         .footerInfo__item 
           i.fa.fa-map-marker
@@ -18,4 +20,7 @@ mixin footer
         .footerInfo__item 
           i.fa.fa-envelope-o
           a(href="mailto:info@keros-med.ru") info@keros-med.ru
+        .footerInfo__item 
+          i.fa.fa-phone
+          a(href="tel:+78452759955") +7 (8452) 75-99-55
 

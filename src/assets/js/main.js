@@ -703,7 +703,7 @@ if ($('.map__area').length) {
           '<div class="baloon__top">Кэрос-медицина</div>' +
           '<div class="baloon__description">IT-Компания</div>',
         balloonContentBody:
-          '<div class="baloon__content"><img src="assets/img/meddix_logo_or_gr.svg">' +
+          '<div class="baloon__content"><div class="baloon__logo"><span class="gr">Кэрос</span><span class="or">MED</span></div>' +
           '<a href="mailto:info@keros-med.ru">info@keros-med.ru</a>',
         balloonContentFooter:
           '<div class="baloon__footer">Саратов, ул. Московская, 117</div>',
